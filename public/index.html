@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuilderBoard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+  <script defer src="common.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><strong>BuilderBoard</strong><span>Builder inventory collaboration</span></div>
+    <a href="/">Local demo</a>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <p class="badge">Real estate builder marketing</p>
+      <h1>Keep brokers aligned on live project inventory.</h1>
+      <p>For builder marketing teams tracking units across projects and states. This is not an MLS listing system.</p>
+    </section>
+    <section id="stats" class="stats"></section>
+    <section class="grid">
+      <div class="panel">
+        <div class="panel-title">
+          <h2>Inventory</h2>
+          <select id="stateFilter"></select>
+        </div>
+        <div id="units" class="list"></div>
+      </div>
+      <aside class="panel stack">
+        <form id="unitForm" class="stack">
+          <h2>Add unit</h2>
+          <label>Project <select name="project_id" id="projectSelect"></select></label>
+          <div class="two">
+            <label>Unit code <input name="unit_code" required></label>
+            <label>Type <select name="unit_type"><option>Condo</option><option>Townhome</option><option>Single-family</option><option>Retail</option><option>Office</option></select></label>
+          </div>
+          <div class="two">
+            <label>Bedrooms <input name="bedrooms" type="number" min="0" value="2"></label>
+            <label>Floor <input name="floor" placeholder="Ground, 1, 12"></label>
+          </div>
+            <label>Price <input name="price" inputmode="numeric" placeholder="385000" required></label>
+          <label>Status <select name="status" id="statusSelect"></select></label>
+          <label>Broker <select name="broker" id="brokerSelect"></select></label>
+          <label>Notes <textarea name="notes"></textarea></label>
+          <button>Add inventory unit</button>
+        </form>
+        <form id="projectForm" class="stack">
+          <h2>Add project</h2>
+          <label>Name <input name="name" required></label>
+          <label>City <input name="city" required></label>
+          <label>State <select name="state" id="newProjectState"></select></label>
+          <label>Developer <input name="developer"></label>
+          <button>Add project</button>
+        </form>
+      </aside>
+    </section>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,2 @@
+:root{--accent:#1d4ed8}
+.topbar div{display:grid}.topbar span{color:#61708a;font-size:.9rem}.shell{max-width:1248px;margin:auto;padding:35px 24px 64px}.hero{margin-bottom:28px;max-width:780px}.panel-title,.unit{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.unit>div{flex:1}.unit textarea{min-height:72px}.unit input{padding:8px 10px}@media(max-width:760px){.shell{padding:24px 16px}.panel-title,.unit{flex-direction:column}}
