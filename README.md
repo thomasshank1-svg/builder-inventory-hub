@@ -1,5 +1,7 @@
 # BuilderBoard
 
+![Project screenshot](docs/screenshot.png)
+
 BuilderBoard is a real-estate inventory collaboration demo for builder marketing teams and broker networks.
 
 It is designed for builders who need to know which units are available, on hold, reserved, or sold across multiple projects and states. It is not an MLS listing system and does not scrape or publish public property listings.
